@@ -18,8 +18,7 @@ razvan@bifrost:~$ ps -o cputime,etime 55789
 00:00:14  2-17:03:00
 ```
 
-- **demo**: a process runs and print system time and user time
-- **demo**: run processes with different nice values
+- **demo**: a process runs and prints system time and user time
 
 # 1. Recap: Process Creation and Termination
 
@@ -62,14 +61,15 @@ razvan@bifrost:~$ ps -o cputime,etime 55789
 # 6. State Transitions
 
 - **diagram**: state transitions and causes of each
-- **demo**: measure time in wait queue
-- **demo** load average: time spent in waiting queue
+- **demo**: measure time in ready queue
+- **demo** load average: number of running / runnable threads per CPU
 - context switch overhead
 
 # 7. Scheduling Attributes / Nuts and Bolts
 
 - system input: thread types: CPU / IO-intensive
 - admin input: nice
+- **demo**: nice
 - **diagram**: scheduler input: thread behaviour, niceness; scheduler output: priority, time slice
 - metrics: fairness / interactivity vs throughput
 
